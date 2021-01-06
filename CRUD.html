@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table
+        { 
+            table-layout: fixed;
+            box-sizing: border-box;
+        }
+        td,th
+        {
+            width: 100px;
+        }
+        table , th , td
+        {
+            border: 3px ;
+            border-style: groove;
+        }
+    </style>
+</head>
+<body>
+    <style>
+
+    </style>
+    <div>
+        <h2>Add New Person</h2>
+        <p>
+        <label for="NametextArea">Name: </label>
+        <input type="text" value="" id="NametextArea"placeholder="Please write the name">
+        </p>
+        <p>
+        <label for="AgetextArea">Age: </label>
+        <input type="number" value="" id="AgetextArea"placeholder="Please write the age">
+        </p>
+        <p>
+            <input type="button" value="Add New Person" id="addButton">
+        </p>
+        <hr>
+        <h2>Person List</h2>
+        <p>
+            <input type="text" value="" id="SearchtextArea"placeholder="Search by name">
+            <input type="button" value="Search Person" id="searchButton">
+        </p>
+        <table cellspacing="0" cellpadding="15">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <div></div>
+    </div>
+    <script src="jquery-3.5.1.js"></script>
+	<script src="CRUD.js"></script>
+</body>
+</html>
